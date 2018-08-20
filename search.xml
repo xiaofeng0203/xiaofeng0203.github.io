@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[闭包]]></title>
+    <url>%2F2018%2F08%2F20%2F%E9%97%AD%E5%8C%85%2F</url>
+    <content type="text"><![CDATA[闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义。 全局变量 123456//全局变量var a= 4;function fn()&#123; console.log(a);&#125; fn(); //4 局部变量:定义在函数的内部12345//局部变量function fn()&#123; var a = 4;&#125;console.log(a); //报错，error 变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义12345//这里的a定义在函数内部，却可以读取，区别在于没有var声明；function fn()&#123; a =1;&#125;console.log(a); //1 二、如何从外部可以读取到局部变量123456789101112//如何访问到fn1函数里a的变量？function fn1()&#123; var a = 5; function fn2()&#123; console.log(a); &#125; return fn2;&#125;console.log(a); //error，直接访问报错，var c = fn1();c(); //5 fn1函数里包着fn2函数，此时，fn1的内部所有局部变量，fn2都可以访问到，反之则不行，fn2的局部变量，fn1访问不到。既然fn2可以访问到，那么我们就安排fn2进去，把fn2返回出来，不就可以读取到fn1的内部变量么。这里fn2函数就是闭包，它可以读取到fn1函数的局部变量。]]></content>
+      <categories>
+        <category>javaScript</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git]]></title>
     <url>%2F2018%2F08%2F20%2FGit%2F</url>
     <content type="text"></content>

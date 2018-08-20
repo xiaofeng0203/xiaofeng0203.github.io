@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="什么是闭包">
+<meta name="description" content="闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js">
-<meta property="og:url" content="https://xiaofeng0203.github.io/2018/08/19/js/index.html">
+<meta property="og:title" content="闭包">
+<meta property="og:url" content="https://xiaofeng0203.github.io/2018/08/20/闭包/index.html">
 <meta property="og:site_name" content="晓风-web前端博客">
-<meta property="og:description" content="什么是闭包">
+<meta property="og:description" content="闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-19T15:33:51.046Z">
+<meta property="og:updated_time" content="2018-08-20T09:52:58.709Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js">
-<meta name="twitter:description" content="什么是闭包">
+<meta name="twitter:title" content="闭包">
+<meta name="twitter:description" content="闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://xiaofeng0203.github.io/2018/08/19/js/"/>
+  <link rel="canonical" href="https://xiaofeng0203.github.io/2018/08/20/闭包/"/>
 
 
 
 
 
-  <title>js | 晓风-web前端博客</title>
+  <title>闭包 | 晓风-web前端博客</title>
   
 
 
@@ -296,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xiaofeng0203.github.io/2018/08/19/js/">
+    <link itemprop="mainEntityOfPage" href="https://xiaofeng0203.github.io/2018/08/20/闭包/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="晓风">
@@ -313,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">js</h1>
+          <h1 class="post-title" itemprop="name headline">闭包</h1>
         
 
         <div class="post-meta">
@@ -325,8 +326,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-19T23:33:19+08:00">
-                2018-08-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-20T17:43:00+08:00">
+                2018-08-20
               </time>
             
 
@@ -335,6 +336,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">javaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -363,7 +386,14 @@
       
 
       
-        <p>什么是闭包</p>
+        <p>闭包就是能够读取函数内部变量的函数<br>函数嵌套函数,内部函数可以引用外部函数的参数和变量。</p>
+<h3 id="一、全局变量与局部变量"><a href="#一、全局变量与局部变量" class="headerlink" title="一、全局变量与局部变量"></a>一、全局变量与局部变量</h3><p>javascript变量可以是局部变量或全局变量。<br>全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；<br>全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。<br>变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义。</p>
+<p>全局变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//全局变量</span><br><span class="line">var a= 4;</span><br><span class="line">function fn()&#123;</span><br><span class="line">    console.log(a);</span><br><span class="line">&#125; </span><br><span class="line">fn();   //4</span><br></pre></td></tr></table></figure>
+<p>局部变量:定义在函数的内部<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//局部变量</span><br><span class="line">function fn()&#123;</span><br><span class="line">    var a = 4;</span><br><span class="line">&#125;</span><br><span class="line">console.log(a); //报错，error</span><br></pre></td></tr></table></figure></p>
+<p>变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//这里的a定义在函数内部，却可以读取，区别在于没有var声明；</span><br><span class="line">function fn()&#123;</span><br><span class="line">    a =1;</span><br><span class="line">&#125;</span><br><span class="line">console.log(a); //1</span><br></pre></td></tr></table></figure></p>
+<h3 id="二、如何从外部可以读取到局部变量"><a href="#二、如何从外部可以读取到局部变量" class="headerlink" title="二、如何从外部可以读取到局部变量"></a>二、如何从外部可以读取到局部变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//如何访问到fn1函数里a的变量？</span><br><span class="line">function fn1()&#123;</span><br><span class="line">    var a = 5;</span><br><span class="line">    function fn2()&#123;</span><br><span class="line">        console.log(a);</span><br><span class="line">    &#125;</span><br><span class="line">    return fn2;</span><br><span class="line">&#125;</span><br><span class="line">console.log(a); //error，直接访问报错，</span><br><span class="line"></span><br><span class="line">var c = fn1();</span><br><span class="line">c();    //5</span><br></pre></td></tr></table></figure>
+<p>fn1函数里包着fn2函数，此时，fn1的内部所有局部变量，fn2都可以访问到，反之则不行，fn2的局部变量，fn1访问不到。<br>既然fn2可以访问到，那么我们就安排fn2进去，把fn2返回出来，不就可以读取到fn1的内部变量么。<br>这里fn2函数就是闭包，它可以读取到fn1函数的局部变量。</p>
 
       
     </div>
@@ -403,6 +433,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
+      
 
       
       
@@ -412,8 +448,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/19/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/08/20/Git/" rel="next" title="git">
+                <i class="fa fa-chevron-left"></i> git
               </a>
             
           </div>
@@ -421,10 +457,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/20/Git/" rel="prev" title="git">
-                git <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,8 +508,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -581,6 +622,21 @@
         </div>
         
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、全局变量与局部变量"><span class="nav-number">1.</span> <span class="nav-text">一、全局变量与局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、如何从外部可以读取到局部变量"><span class="nav-number">2.</span> <span class="nav-text">二、如何从外部可以读取到局部变量</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      <!--/noindex-->
       
       
     </div>
