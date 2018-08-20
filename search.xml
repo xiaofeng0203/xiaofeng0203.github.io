@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git简易笔记]]></title>
+    <url>%2F2018%2F08%2F20%2Fgit%E7%AE%80%E6%98%93%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[Git是一款免费、开源的分布式版本控制系统。目前比较流行的版本管理控制系统。 一、初始化去https://coding.net注册账号coding与github都是代码托管服务网站,coding是国内的,Github是国外的。123git initgit commit -m "first commit"git remote add origin git@github.com:yourName/yourRepo.git 后面的yourName和yourRepo表示你再coding的用户名和刚才新建的仓库。例如:1git remote add origin https://git.coding.net/xiaofeng0203/xiaofeng0203.git 加完之后进入.git，打开config，这里会多出一个remote “origin”内容，这就是刚才添加的远程地址，也可以直接修改config来配置远程地址。1git push -u origin master 二、设置Git的 user name 和email12git config --global user.name "xiaofeng0203" //用户名git config --global user.email "your_email@example.com" //邮箱地址 三、生成公钥key1ssh-keygen -t rsa -b 4096 -C "your_email@example.com" 执行完命令后,会在C盘\用户目录.ssh\id_ras.pub下生成id_ras.pub文件 四、clone项目选择自己的一个盘符,git clone 仓库地址1git clone https://github.com/xiaofeng0203/new.git 五、查看当前目录状态1git status 六、增加代码到仓库增加自己的代码到本地仓库,目的是让git仓库记录刚刚改动过的代码1git add . 七、添加本次提交的信息添加自己提交的信息,记录增加了什么功能,引号里可以是中文1git commit -m "add text" 八、推送代码把改动的代码上传到线上仓库1git push 九、更新代码git pull的作用是更新项目代码,有时候别人也提交了代码,项目的代码被更新后,要先git pull,否则git push的时候会报错1git pull 十、预览自己的页面成功推送完代码后可以访问预览自己的页面，在coding.net上打开项目文件=&gt;代码=&gt;设置Pages服务=&gt;一键启,有个地址就可以访问你刚刚提交的页面。]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[闭包]]></title>
     <url>%2F2018%2F08%2F20%2F%E9%97%AD%E5%8C%85%2F</url>
-    <content type="text"><![CDATA[闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义。 全局变量 123456//全局变量var a= 4;function fn()&#123; console.log(a);&#125; fn(); //4 局部变量:定义在函数的内部12345//局部变量function fn()&#123; var a = 4;&#125;console.log(a); //报错，error 变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义12345//这里的a定义在函数内部，却可以读取，区别在于没有var声明；function fn()&#123; a =1;&#125;console.log(a); //1 二、如何从外部可以读取到局部变量123456789101112//如何访问到fn1函数里a的变量？function fn1()&#123; var a = 5; function fn2()&#123; console.log(a); &#125; return fn2;&#125;console.log(a); //error，直接访问报错，var c = fn1();c(); //5 fn1函数里包着fn2函数，此时，fn1的内部所有局部变量，fn2都可以访问到，反之则不行，fn2的局部变量，fn1访问不到。既然fn2可以访问到，那么我们就安排fn2进去，把fn2返回出来，不就可以读取到fn1的内部变量么。这里fn2函数就是闭包，它可以读取到fn1函数的局部变量。]]></content>
+    <content type="text"><![CDATA[闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义。 全局变量 123456// 全局变量var a= 4;function fn()&#123; console.log(a);&#125; fn(); // 4 局部变量:定义在函数的内部12345//局部变量function fn()&#123; var a = 4;&#125;console.log(a); //报错，error 变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义12345//这里的a定义在函数内部，却可以读取，区别在于没有var声明；function fn()&#123; a =1;&#125;console.log(a); //1 二、如何从外部可以读取到局部变量123456789101112//如何访问到fn1函数里a的变量？function fn1()&#123; var a = 5; function fn2()&#123; console.log(a); &#125; return fn2;&#125;console.log(a); //error，直接访问报错，var c = fn1();c(); //5 fn1函数里包着fn2函数，此时，fn1的内部所有局部变量，fn2都可以访问到，反之则不行，fn2的局部变量，fn1访问不到。既然fn2可以访问到，那么我们就安排fn2进去，把fn2返回出来，不就可以读取到fn1的内部变量么。这里fn2函数就是闭包，它可以读取到fn1函数的局部变量。 三、 小例子思考下面buy()；会得到什么值？12345678910var a = 'apple';function fn1()&#123; var a = 'banana'; function fn2()&#123; return a; &#125; return fn2;&#125;var buy = fn1();buy(); 答案是：banana;123456789var data = [];for (var i = 0; i&lt;3; i++)&#123; data[i] = function()&#123; console.log(i); &#125;&#125;data[0](); //?data[1](); //?data[2](); //? 答案是:都是3; 换成闭包看看:1234567891011var data = [];for(var i=0; i&lt;3; i++)&#123; data[i]=(function(i)&#123; return function()&#123; console.log(i); &#125; &#125;)(i);&#125;data[0]();data[1]();data[2](); 答案是:0,1,2; 下面是另外两个例子,如果这几个例子都答对了,说明已经理解了js运行机制;1234567891011//obj1var name = 'The window';var object = &#123; name:'my Object', getNameFunc:function()&#123; return function()&#123; return this.name; &#125; &#125;&#125;console.log(object.getNameFunc()());//输出的是什么 ? 123456789101112//obj2var name = 'The window';var object = &#123; name: 'my Object', getNameFunc: function()&#123; var _this = this; return function()&#123; return _this.name; &#125; &#125;&#125;console.log(object.getNameFunc()());//输出的是什么 ?为什么 ? 以上两题的答案分别是::obj1:The windowobj2: my Object]]></content>
       <categories>
         <category>javaScript</category>
       </categories>
       <tags>
         <tag>javascript</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[git]]></title>
-    <url>%2F2018%2F08%2F20%2FGit%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[js]]></title>
-    <url>%2F2018%2F08%2F19%2Fjs%2F</url>
-    <content type="text"><![CDATA[什么是闭包]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F08%2F19%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
