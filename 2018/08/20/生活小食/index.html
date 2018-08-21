@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="javascript," />
+  <meta name="keywords" content="javarscript," />
 
 
 
@@ -79,18 +79,17 @@
 
 
 
-<meta name="description" content="闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全">
-<meta name="keywords" content="javascript">
+<meta name="keywords" content="javarscript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="闭包">
-<meta property="og:url" content="https://xiaofeng0203.github.io/2018/08/20/闭包/index.html">
+<meta property="og:title" content="生活小食">
+<meta property="og:url" content="https://xiaofeng0203.github.io/2018/08/20/生活小食/index.html">
 <meta property="og:site_name" content="晓风-web前端博客">
-<meta property="og:description" content="闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-21T03:13:53.470Z">
+<meta property="og:image" content="https://res.cloudinary.com/dxnp34g8e/image/upload/v1534818235/samples/food/fish-vegetables.jpg">
+<meta property="og:updated_time" content="2018-08-21T03:08:11.016Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="闭包">
-<meta name="twitter:description" content="闭包就是能够读取函数内部变量的函数函数嵌套函数,内部函数可以引用外部函数的参数和变量。 一、全局变量与局部变量javascript变量可以是局部变量或全局变量。全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。变量声明时如果不使用var,那么它就是一个全">
+<meta name="twitter:title" content="生活小食">
+<meta name="twitter:image" content="https://res.cloudinary.com/dxnp34g8e/image/upload/v1534818235/samples/food/fish-vegetables.jpg">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://xiaofeng0203.github.io/2018/08/20/闭包/"/>
+  <link rel="canonical" href="https://xiaofeng0203.github.io/2018/08/20/生活小食/"/>
 
 
 
 
 
-  <title>闭包 | 晓风-web前端博客</title>
+  <title>生活小食 | 晓风-web前端博客</title>
   
 
 
@@ -297,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xiaofeng0203.github.io/2018/08/20/闭包/">
+    <link itemprop="mainEntityOfPage" href="https://xiaofeng0203.github.io/2018/08/20/生活小食/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="晓风">
@@ -314,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">闭包</h1>
+          <h1 class="post-title" itemprop="name headline">生活小食</h1>
         
 
         <div class="post-meta">
@@ -326,7 +325,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-20T17:43:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-20T16:11:18+08:00">
                 2018-08-20
               </time>
             
@@ -349,8 +348,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/分类/javaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">javaScript</span>
+                  <a href="/分类/日常/" itemprop="url" rel="index">
+                    <span itemprop="name">日常</span>
                   </a>
                 </span>
 
@@ -386,22 +385,7 @@
       
 
       
-        <p>闭包就是能够读取函数内部变量的函数<br>函数嵌套函数,内部函数可以引用外部函数的参数和变量。</p>
-<h3 id="一、全局变量与局部变量"><a href="#一、全局变量与局部变量" class="headerlink" title="一、全局变量与局部变量"></a>一、全局变量与局部变量</h3><p>javascript变量可以是局部变量或全局变量。<br>全局变量的作用域是全局性的，而在函数内部声明的变量,只在函数内部起作用。这些变量是局部变量，作用域是局部性的；<br>全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。<br>变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义。</p>
-<p>全局变量</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 全局变量</span></span><br><span class="line"><span class="keyword">var</span> a= <span class="number">4</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line">&#125; </span><br><span class="line">fn();   <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
-<p>局部变量:定义在函数的内部<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//局部变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">4</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">//报错，error</span></span><br></pre></td></tr></table></figure></p>
-<p>变量声明时如果不使用var,那么它就是一个全局变量，即便它在函数内定义<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这里的a定义在函数内部，却可以读取，区别在于没有var声明；</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    a =<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">//1</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="二、如何从外部可以读取到局部变量"><a href="#二、如何从外部可以读取到局部变量" class="headerlink" title="二、如何从外部可以读取到局部变量"></a>二、如何从外部可以读取到局部变量</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如何访问到fn1函数里a的变量？</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">5</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">fn2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(a);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> fn2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">//error，直接访问报错，</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c = fn1();</span><br><span class="line">c();    <span class="comment">//5</span></span><br></pre></td></tr></table></figure>
-<p>fn1函数里包着fn2函数，此时，fn1的内部所有局部变量，fn2都可以访问到，反之则不行，fn2的局部变量，fn1访问不到。<br>既然fn2可以访问到，那么我们就安排fn2进去，把fn2返回出来，不就可以读取到fn1的内部变量么。<br>这里fn2函数就是闭包，它可以读取到fn1函数的局部变量。</p>
-<h3 id="三、-小例子"><a href="#三、-小例子" class="headerlink" title="三、 小例子"></a>三、 小例子</h3><p>思考下面buy()；会得到什么值？<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">'apple'</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="string">'banana'</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">fn2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> fn2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> buy = fn1();</span><br><span class="line">buy();</span><br></pre></td></tr></table></figure></p>
-<p>答案是：banana;<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;<span class="number">3</span>; i++)&#123;</span><br><span class="line">    data[i] = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">data[<span class="number">0</span>](); <span class="comment">//?</span></span><br><span class="line">data[<span class="number">1</span>](); <span class="comment">//?</span></span><br><span class="line">data[<span class="number">2</span>](); <span class="comment">//?</span></span><br></pre></td></tr></table></figure></p>
-<p>答案是:都是3;</p>
-<p>换成闭包看看:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = [];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)&#123;</span><br><span class="line">    data[i]=(<span class="function"><span class="keyword">function</span>(<span class="params">i</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)(i);</span><br><span class="line">&#125;</span><br><span class="line">data[<span class="number">0</span>]();</span><br><span class="line">data[<span class="number">1</span>]();</span><br><span class="line">data[<span class="number">2</span>]();</span><br></pre></td></tr></table></figure></p>
-<p>答案是:0,1,2;</p>
-<p>下面是另外两个例子,如果这几个例子都答对了,说明已经理解了js运行机制;<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//obj1</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'The window'</span>;</span><br><span class="line"><span class="keyword">var</span> object = &#123;</span><br><span class="line">    name:<span class="string">'my Object'</span>,</span><br><span class="line">    getNameFunc:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(object.getNameFunc()());<span class="comment">//输出的是什么 ?</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//obj2</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'The window'</span>;</span><br><span class="line"><span class="keyword">var</span> object = &#123;</span><br><span class="line">    name: <span class="string">'my Object'</span>,</span><br><span class="line">    getNameFunc: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> _this = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> _this.name;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(object.getNameFunc()());<span class="comment">//输出的是什么 ?为什么 ?</span></span><br></pre></td></tr></table></figure>
-<p>以上两题的答案分别是::<br>obj1:The window<br>obj2: my Object</p>
+        <p><img src="https://res.cloudinary.com/dxnp34g8e/image/upload/v1534818235/samples/food/fish-vegetables.jpg" alt="早餐"></p>
 
       
     </div>
@@ -443,7 +427,7 @@
       
         <div class="post-tags">
           
-            <a href="/标签/javascript/" rel="tag"># javascript</a>
+            <a href="/标签/javarscript/" rel="tag"># javarscript</a>
           
         </div>
       
@@ -456,18 +440,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/20/生活小食/" rel="next" title="生活小食">
-                <i class="fa fa-chevron-left"></i> 生活小食
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/20/git简易笔记/" rel="prev" title="git简易笔记">
-                git简易笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/20/闭包/" rel="prev" title="闭包">
+                闭包 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -520,17 +500,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -634,21 +605,6 @@
         </div>
         
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、全局变量与局部变量"><span class="nav-number">1.</span> <span class="nav-text">一、全局变量与局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、如何从外部可以读取到局部变量"><span class="nav-number">2.</span> <span class="nav-text">二、如何从外部可以读取到局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、-小例子"><span class="nav-number">3.</span> <span class="nav-text">三、 小例子</span></a></li></ol></div>
-            
-          </div>
-        </section>
-      <!--/noindex-->
       
       
     </div>
